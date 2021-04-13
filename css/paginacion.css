@@ -1,0 +1,46 @@
+@import url("cpanel.css") root;
+.paginacion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.paginacion button {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1.5rem;
+    display: block;
+    text-align: center;
+    border: none;
+    box-shadow: 5px 5px 0px rgb(221 211 211 / 40%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    outline: none;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+.paginacion button:hover {
+    background: #1f1f22;
+}
+
+.paginacion button.ocultar {
+    visibility: hidden;
+}
+
+@media screen and (max-width:768px) {
+    .paginacion {
+        display: block;
+    }
+    .paginacion button:first-child {
+        margin-bottom: 4rem;
+    }
+    .paginacion button {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+}

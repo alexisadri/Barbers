@@ -1,0 +1,129 @@
+@import url("cpanel.css") root;
+.listado-servicios {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4rem 0;
+}
+
+.servicio {
+    padding: 1rem;
+    box-shadow: 5px 5px 0 rgb(0 0 0 / 70%);
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.servicio:first-child,
+.servicio:nth-child(3),
+.servicio:nth-child(5),
+.servicio:nth-child(7),
+.servicio:last-child {
+    background: #19191b;
+}
+
+.servicio:nth-child(2),
+.servicio:nth-child(4),
+.servicio:nth-child(6),
+.servicio:nth-child(8) {
+    background: #1f1f22;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+p {
+    margin: 2rem 1rem 0;
+}
+
+.servicio.seleccionado {
+    background-color: var(--secundario);
+}
+
+.servicio.seleccionado p {
+    color: var(--blanco);
+    transition: .3s;
+}
+
+.nombre-servicio {
+    color: var(--blanco);
+    font-weight: 550;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.detalle-servicio {
+    color: var(--blanco);
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.precio-servicio {
+    color: var(--secundario);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.contenido-resumen {
+    margin-bottom: 2.5rem 0;
+}
+
+.contenido-resumen p {
+    margin-bottom: .5rem;
+}
+
+.contenido-resumen span {
+    font-weight: 700;
+    color: var(--secundario);
+    font-size: 2.4rem;
+}
+
+.resumen-servicios h3 {
+    margin: 2.5rem 0;
+}
+
+.resumen-servicios .contenedor-servicio {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #43453c;
+}
+
+.resumen-servicios .precio {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--secundario);
+}
+
+.total {
+    text-align: right;
+}
+
+@media screen and (max-width:1280px) {
+    .listado-servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .listado-servicios {
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .listado-servicios {
+        grid-template-columns: repeat(1, 400px);
+    }
+    .servicio {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .listado-servicios {
+        grid-template-columns: repeat(1, 250px);
+    }
+}

@@ -1,0 +1,64 @@
+@import url("cpanel.css") root;
+.tabs {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4rem 0;
+}
+
+.tabs button {
+    background: #19191b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.5rem;
+    color: var(--blanco);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 5px 5px 0 rgb(0 0 0 / 70%);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+
+.tabs button:nth-child(2) {
+    background: #1f1f22;
+}
+
+.tabs button:hover {
+    background: var(--secundario);
+    color: var(--blanco);
+}
+
+.tabs .actual {
+    background-color: var(--secundario);
+    color: var(--blanco);
+}
+
+@media screen and (max-width:1024px) {
+    .tabs {
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .tabs {
+        grid-template-columns: repeat(1, 300px);
+    }
+    .tabs button {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+    .tabs button:hover {
+        transform: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .tabs {
+        grid-template-columns: repeat(1, 250px);
+    }
+}

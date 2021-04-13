@@ -1,0 +1,497 @@
+.icon-social ul {
+    width: 40%;
+}
+
+.section-barbers {
+    width: 100%;
+}
+
+.about {
+    flex: 0 0 calc(33.3% - 1rem);
+    padding: 1rem;
+}
+
+.barbers-tittle {
+    height: 80px;
+    text-align: center;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.barbers-tittle i {
+    color: #d4d7dd;
+    font-size: 25px;
+}
+
+.barbers-tittle h2 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: #d4d7dd;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.barbers-tittle h2::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    bottom: 0%;
+    left: 47%;
+    background: #d4d7dd;
+}
+
+.content-barbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    padding: 0 2rem;
+}
+
+
+/*Contenido tarjetas*/
+
+.barbers-detalls {
+    padding: .5rem;
+    background: #d4d7dd;
+    box-shadow: 5px 5px 0px rgb(221 211 211 / 40%);
+    transition: transform .5s ease-in-out;
+}
+
+.barbers-detalls:hover {
+    transform: translateY(-10px);
+}
+
+.barbers-detalls:first-child {
+    transform: translateY(10rem);
+}
+
+.barbers-detalls:first-child:hover {
+    transform: translateY(11rem);
+}
+
+.barbers-detalls:nth-child(2) {
+    transform: translateY(5rem);
+}
+
+.barbers-detalls:nth-child(2):hover {
+    transform: translateY(2.5rem);
+}
+
+.barbers-detalls img {
+    width: 100%;
+    height: 700px;
+    filter: brightness(75%);
+    transition: filter .5s ease;
+}
+
+.barbers-detalls img:hover {
+    filter: brightness(100%);
+}
+
+.barbers-detalls p {
+    font-size: 25px;
+    font-family: 'Dancing Script', serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+/*History*/
+
+.barbers-history {
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+}
+
+.history {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.barbers-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: #d4d7dd;
+    margin-bottom: 1rem;
+    font-size: 35px;
+}
+
+.barbers-text p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    color: #d4d7dd;
+    margin: 2rem 0;
+}
+
+
+/*Estilo*/
+
+.barbers-info {
+    margin: 4rem 0;
+}
+
+.content-info {
+    margin: 3rem;
+}
+
+.iconsx {
+    flex: 0 0 calc(25% -1rem);
+}
+
+.info-icons {
+    display: flex;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.barber-text__content {
+    background: #19191b;
+    box-shadow: 5px 5px 19px rgba(0, 0, 0, .4);
+    border-radius: 8px;
+    width: 100%;
+    margin: 1rem;
+    padding: 2rem .5rem;
+}
+
+.barber-text__content:nth-child(2),
+.barber-text__content:nth-child(4) {
+    background: #1f1f22;
+}
+
+.barber-text__content i {
+    font-size: 30px;
+    color: #747285;
+    margin-bottom: 1rem;
+}
+
+.barber-text__content h3 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: #d4d7dd;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.barber-text__content p {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: #d4d7dd;
+}
+
+.info-img {
+    width: 628px;
+    margin: 0 auto;
+    text-align: center;
+    padding: .5rem;
+    background: #d4d7dd;
+    box-shadow: 5px 5px 0px rgb(221 211 211 / 40%);
+    transition: transform .8s linear;
+}
+
+.info-img:hover {
+    transform: scale(1.1);
+}
+
+.info-img img {
+    filter: brightness(75%);
+    transition: filter .5s ease;
+}
+
+.info-img img:hover {
+    filter: brightness(100%);
+}
+
+.info-img p {
+    font-size: 25px;
+    font-family: 'Dancing Script', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*Artistas*/
+
+.barbers-person {
+    margin-top: 4rem;
+}
+
+.person-content {
+    margin-top: 3rem;
+    display: flex;
+    padding: 0 2.5rem;
+}
+
+.card-person {
+    margin: 1rem;
+    padding: 0.5rem;
+    background: #d4d7dd;
+    box-shadow: 5px 5px 0px rgb(221 211 211 / 40%);
+    transition: transform .5s linear;
+}
+
+.card-person:hover {
+    transform: translateY(-10px);
+}
+
+.card-person img {
+    filter: brightness(75%);
+    transition: filter .5s ease;
+}
+
+.card-person img:hover {
+    filter: brightness(100%);
+}
+
+.card-person p {
+    font-size: 28px;
+    font-family: 'Dancing Script', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.icons-redes {
+    text-align: center;
+}
+
+.icons-redes a i {
+    color: #19191b;
+    margin: .5rem;
+    padding: .5rem;
+    border: 1px solid #19191b;
+    transition: all .5s ease-in-out;
+}
+
+.icons-redes a:first-child i:hover {
+    background: #3b5998;
+    color: #d4d7dd;
+    transform: scale(1.1);
+}
+
+.icons-redes a:nth-child(2) i:hover {
+    background: #00acee;
+    color: #d4d7dd;
+    transform: scale(1.1);
+}
+
+.icons-redes a:last-child i:hover {
+    background: #0e76a8;
+    color: #d4d7dd;
+    transform: scale(1.1);
+}
+
+
+/*Footer*/
+
+.footer-barbers {
+    margin-top: 4rem;
+    width: 100%;
+    height: 360px;
+}
+
+.footer-barbers .icon-social ul {
+    width: 20%;
+}
+
+.logo img {
+    margin-top: 1.5rem;
+}
+
+.content-logo p {
+    margin: 2rem 0;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #d4d7dd;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width:1300px) {
+    .barbers-tittle h2::after {
+        width: 60px;
+        left: 47%;
+    }
+    .barber-text__content i {
+        font-size: 28px;
+    }
+    .barber-text__content h3 {
+        font-size: 20px;
+    }
+    .barbers-detalls img {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header-content:first-child {
+        height: 366px;
+    }
+    .logo p {
+        font-size: 18px;
+    }
+    .barbers-tittle h2::after {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 3px;
+        bottom: 0%;
+        left: 47%;
+        background: #d4d7dd;
+    }
+    .barbers-detalls img {
+        height: 450px;
+    }
+    .barbers-detalls p {
+        font-size: 22px;
+    }
+    .iconsx {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .info-icons {
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .info-img {
+        width: 500px;
+        margin-top: 2rem;
+    }
+    .card-person {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+    .person-content {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .footer-barbers .icon-social ul {
+        width: 30%;
+    }
+    .footer-barbers p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .barbers-tittle h2::after {
+        width: 40px;
+        left: 45%;
+    }
+    .about {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .logo p {
+        font-size: 16px;
+    }
+    .content-barbers {
+        flex-flow: row wrap;
+    }
+    .barbers-tittle h2 {
+        font-size: 30px;
+    }
+    .barbers-text h3 {
+        font-size: 30px;
+    }
+    .barbers-text p {
+        font-size: 18px;
+    }
+    .barbers-detalls {
+        margin: 1rem 0;
+    }
+    .barbers-detalls img {
+        height: 350px;
+    }
+    .barbers-detalls p {
+        font-size: 18px;
+    }
+    .barbers-detalls:first-child {
+        transform: translateY(0);
+    }
+    .barbers-detalls:nth-child(2) {
+        transform: translateY(0);
+    }
+    .barbers-detalls:first-child:hover {
+        transform: none;
+    }
+    .barbers-detalls:nth-child(2):hover {
+        transform: none;
+    }
+    .barbers-detalls:hover {
+        transform: none;
+    }
+    .barbers-history {
+        margin: 2rem;
+    }
+    .content-info {
+        margin: 4rem 0;
+    }
+    .info-img {
+        width: 400px;
+    }
+    .iconsx {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .card-person {
+        flex: 0 0 calc(45% - 1rem);
+    }
+    .footer-barbers p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .barbers-tittle h2 {
+        font-size: 25px;
+    }
+    .barbers-text h3 {
+        font-size: 25px;
+    }
+    .barbers-text p {
+        font-size: 16px;
+    }
+    .barbers-detalls img {
+        height: 300px;
+    }
+    .barber-text__content h3 {
+        font-size: 16px;
+    }
+    .barber-text__content p {
+        font-size: 16px;
+    }
+    .about {
+        flex: 0 0 100%;
+    }
+    .iconsx {
+        flex: 0 0 calc(75% - 1rem);
+    }
+    .logo p {
+        font-size: 14px;
+    }
+    .card-person {
+        flex: 0 0 100%;
+    }
+    .info-img {
+        width: 300px;
+    }
+    .footer-barbers .icon-social ul {
+        width: 60%;
+    }
+    .footer-barbers p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .info-img {
+        width: 200px;
+    }
+    .iconsx {
+        flex: 0 0 100%;
+    }
+}

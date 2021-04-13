@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión | Corte al estilo original</title>
+    <script src="https://kit.fontawesome.com/461910131c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/barber.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/barbers.css">
+    <link rel="stylesheet" href="css/cortes.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/sesion.css">
+    <link rel="stylesheet" href="css/contrasenanueva.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="content-logo">
+                <div class="logo">
+                    <img src="img/mostache-white.png" alt="mostache-white">
+                    <a href="index.html">
+                        <h1>BarberShop</h1>
+                    </a>
+                    <p>Por: Alexis Medranda</p>
+                </div>
+                <div class="icon-social">
+                    <ul>
+                        <li><a href=" https://wa.me/+5930990861622?text=Hola%20BarberShop!%20Me%20interesa%20agendar%20una%20cita%20a%20domicilio,%20por%20favor " target="_blank "><i class="whatsapp fab fa-whatsapp "></i></a></li>
+                        <li><a href="https://www.instagram.com/adrian__med/ " target="_blank "><i class="instagram fab fa-instagram "></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100020210114380 " target="_blank "><i class="facebook fab fa-facebook-square "></i></a></li>
+                        <li><a href="https://twitter.com/ " target="_blank "><i class="twitter fab fa-twitter "></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="content-menu">
+                <div class="menu">
+                    <a href="barbers.html">Barbers</a>
+                </div>
+                <div class="menu">
+                    <a href="sesion.html">Citas</a>
+                </div>
+                <div class="menu">
+                    <a href="cortes.html">Cortes</a>
+                </div>
+                <div class="menu">
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="barbers-tittle">
+            <i class="fas fa-cut"></i>
+            <h2>Nueva Clave</h2>
+        </div>
+        <article class="container__sesion">
+            <form action="php/nuevaclave.php" method="POST" onsubmit="return password();">
+                <img src="img/pass.png" alt="user">
+                <p>Recupera tu contraseña</p>
+                <input type="email" id="email" placeholder="E-mail" name="correo">
+                <button type="submit" name="codigo">Enviar</button>
+            </form>
+        </article>
+    </section>
+
+
+    <script src="js/scripts.js"></script>
+    <script src="js/captura.js"></script>
+</body>
+
+</html>

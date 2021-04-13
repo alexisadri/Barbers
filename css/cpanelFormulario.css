@@ -1,0 +1,55 @@
+.formulario {
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.field {
+    margin-bottom: 2.5rem;
+}
+
+.field legend {
+    color: #d3d3d3;
+    padding: 0 2rem;
+}
+
+.formulario .campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.formulario .campo:first-of-type {
+    margin-top: 2rem;
+}
+
+.campo label {
+    flex: 0 0 10rem;
+    color: #d3d3d3;
+}
+
+.campo input {
+    flex: 1;
+    background-color: #1f1f22;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: #d4d7dd;
+    border: none;
+    outline: none;
+}
+
+.campo input::placeholder {
+    color: #d4d7dd;
+}
+
+.alerta {
+    padding: 1.2rem;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+    color: #d3d3d3;
+    display: block;
+}
+
+.error {
+    background-color: #747285;
+}
